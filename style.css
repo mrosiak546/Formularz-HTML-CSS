@@ -9,7 +9,6 @@
 .formContainer{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
     width: 50%;
     margin: 0 auto;
 }
@@ -19,25 +18,53 @@
     font-weight: bold;
     margin-bottom: 1rem;
     color: rgb(178, 116, 1);
+    margin-top: 10px;
 }
 
-.firstFormContainer{
+.firstFormContainer,
+.secondFormContainer
+{
     display: flex;
+    gap: 1rem;
     margin-bottom: 1rem;
     justify-content: space-between;
 }
 
 .firstName,
-.lastName
+.lastName,
+.email,
+.phone,
+.date
 {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
+.firstName label, 
+.lastName label,
+.email label, 
+.phone label, 
+.date label,
+.thirdFormContainer label,
+.fourthFormContainer legend,
+.fifthFormContainer legend,
+.sixthFormContainer label
+{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
 
 .firstName input, 
-.lastName input{
+.lastName input,
+.email input, 
+.phone input, 
+.date input,
+.thirdFormContainer select,
+.sixthFormContainer textarea
+{
     padding: 0.75rem;
     border: 1px solid gray;
     border-radius: 5px;
@@ -45,145 +72,38 @@
     background-color: white;
 }
 
-.firstName input{
-    margin-right: 1rem;
-}
-
-.firstName label, .lastName label{
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-
-.firstName input:focus, .lastName input:focus{
+.firstName input:focus, 
+.lastName input:focus,
+.email input:focus, 
+.phone input:focus, 
+.date input:focus,
+.thirdFormContainer select:focus,
+.sixthFormContainer textarea:focus
+{
     outline: none;
     border: 1px solid rgb(210, 146, 28);
 }
 
-.secondFormContainer{
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-
-.email,
-.phone,
-.date{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.email input, .phone input, .date input{
-    padding: 0.75rem;
-    border: 1px solid gray;
-    border-radius: 5px;
-    color: black;
-    background-color: white;
-}
-
-.email input:focus, .phone input:focus, .date input:focus{
-    outline: none;
-    border: 1px solid rgb(210, 146, 28);
-}
-
-.email label, .phone label, .date label{
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.thirdFormContainer{
+.thirdFormContainer,
+.fourthFormContainer,
+.fifthFormContainer,
+.sixthFormContainer
+{
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
 }
 
-.thirdFormContainer label{
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.thirdFormContainer select{
-    padding: 0.75rem;
-    border: 1px solid gray;
-    border-radius: 5px;
-    color: black;
-    background-color: white;
-}
-
-.thirdFormContainer select:focus{
-    outline: none;
-    border: 1px solid rgb(210, 146, 28);
-}
-
-.fourthFormContainer{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-}
-
-.fourthFormContainer legend{
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.positionOptions{
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-}
-
-.positionOptions label{
-    color: black;
-}
-
-.fifthFormContainer{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-}
-
-.fifthFormContainer legend{
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
+.positionOptions,
 .programmingOptions{
     display: flex;
     gap: 1rem;
     justify-content: space-between;
 }
 
+.positionOptions label,
 .programmingOptions label{
     color: black;
-}
-
-.sixthFormContainer{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-}
-
-.sixthFormContainer label{
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.sixthFormContainer textarea{
-    padding: 0.75rem;
-    border: 1px solid gray;
-    border-radius: 5px;
-    color: black;
-    background-color: white;
-}
-
-.sixthFormContainer textarea:focus{
-    outline: none;
-    border: 1px solid rgb(210, 146, 28);
 }
 
 .seventhFormContainer{
@@ -215,6 +135,3 @@
 .seventhFormContainer button[type="reset"]:hover{
     background-color: rgb(178, 116, 1);
 }
-
-
-
