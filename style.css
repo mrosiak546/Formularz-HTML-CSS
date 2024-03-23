@@ -137,3 +137,31 @@
 .seventhFormContainer button[type="reset"]:hover{
     background-color: rgb(178, 116, 1);
 }
+
+/* Resposnive */
+@media (max-width: 1024px){
+    .formContainer{
+        width: 80%;
+    }
+
+    .firstFormContainer,
+    .secondFormContainer
+    {
+        flex-wrap: wrap;
+    }
+
+    .programmingOptions,
+    .positionOptions
+    {
+        flex-direction: column;
+    }
+
+    .seventhFormContainer button[type="submit"],
+    .seventhFormContainer button[type="reset"]
+    {
+        flex: 1;
+    }
+
+
+
+}
