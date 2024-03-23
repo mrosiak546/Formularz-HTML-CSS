@@ -121,3 +121,25 @@
     outline: none;
     border: 1px solid rgb(210, 146, 28);
 }
+
+.fourthFormContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.fourthFormContainer legend{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.positionOptions{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.positionOptions label{
+    color: black;
+}
