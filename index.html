@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="formContainer">
+    <form class="formContainer" onsubmit="return validateForm()">
 
         <div class="formTitle">
             <h1>Employment Form</h1>
@@ -16,12 +16,12 @@
         <div class="firstFormContainer">
             <div class="firstName">
                 <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
             </div>
 
             <div class="lastName">
                 <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
             </div>
         </div>
 
@@ -29,24 +29,24 @@
 
             <div class="email">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="email@gmail.com">
+                <input type="email" name="email" id="email" placeholder="email@gmail.com" required>
             </div>
 
             <div class="phone">
                 <label for="phone">Phone</label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="505 505 505">
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="505 505 505" required>
             </div>
 
             <div class="date">
                 <label for="date">Date</label>
-                <input type="date" name="date" id="date">
+                <input type="date" name="date" id="date" required>
             </div>
 
         </div>
 
         <div class="thirdFormContainer">
             <label for="gender-select">Gender</label>
-            <select name="gender" id="gender-select">
+            <select name="gender" id="gender-select" required>
                 <option value="">Select your gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
@@ -56,24 +56,24 @@
 
         <div class="fourthFormContainer">
             <legend>What are you looking for</legend>
-            <div class="positionOptions">
+            <div class="positionOptions" >
                 <div>
-                    <input type="radio" name="position" id="SoftwareEnginner" value="SoftwareEnginner">
+                    <input type="radio" name="position" id="SoftwareEnginner" value="SoftwareEnginner" required>
                     <label for="SoftwareEnginner">Software Enginner</label>
                 </div>
 
                 <div>
-                    <input type="radio" name="position" id="UXDesigner" value="UXDesigner">
+                    <input type="radio" name="position" id="UXDesigner" value="UXDesigner" required>
                     <label for="UXDesigner">UX Designer</label>
                 </div>
 
                 <div>
-                    <input type="radio" name="position" id="AnalyticsSpecialist" value="AnalyticsSpecialist">
+                    <input type="radio" name="position" id="AnalyticsSpecialist" value="AnalyticsSpecialist" required>
                     <label for="AnalyticsSpecialist">Analytics Specialist</label>
                 </div>
                 
                 <div>
-                    <input type="radio" name="position" id="ProjectManager" value="ProjectManager">
+                    <input type="radio" name="position" id="ProjectManager" value="ProjectManager" required>
                     <label for="ProjectManager">Project Manager</label>
                 </div>
             </div>
@@ -116,15 +116,15 @@
 
         <div class="sixthFormContainer">
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message" required></textarea>
         </div>
 
         <div class="seventhFormContainer">
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </div>
+    </form>
 
-
-    </div>
+    <script src="./validation.js"></script>
 </body>
 </html>

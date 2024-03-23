@@ -102,7 +102,9 @@
 }
 
 .positionOptions label,
-.programmingOptions label{
+.programmingOptions label,
+.thirdFormContainer option
+{
     color: black;
 }
 
