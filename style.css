@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    color: rgb(210, 146, 28);
+    color: orange;
+    background-color: rgb(232, 228, 228);
 }
 
 .formContainer{
@@ -27,7 +28,8 @@
 
 .firstFormContainer{
     display: flex;
-    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
 }
 
 .firstName,
@@ -35,7 +37,7 @@
 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    flex: 1;
 }
 
 
@@ -43,8 +45,12 @@
     padding: 0.75rem;
     border: 1px solid gray;
     border-radius: 5px;
-    width: 300px;
     color: black;
+    background-color: white;
+}
+
+.firstName input{
+    margin-right: 1rem;
 }
 
 .firstName label, .lastName label{
@@ -54,6 +60,34 @@
 
 
 .firstName input:focus, .lastName input:focus{
+    outline: none;
+    border: 1px solid rgb(210, 146, 28);
+}
+
+.secondFormContainer{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.email,
+.phone,
+.date{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.email input, .phone input, .date input{
+    padding: 0.75rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+}
+
+.email input:focus, .phone input:focus, .date input:focus{
     outline: none;
     border: 1px solid rgb(210, 146, 28);
 }
